@@ -1,0 +1,106 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: black;
+	font-family: monospace;
+}
+.stop-watch-container {
+	border: 3px solid white;
+	border-radius: 10px;
+	padding: 25px;
+	height: 150px;
+	width: 30vw;
+}
+.display-time {
+	text-align: center;
+	font-size: 6rem;
+	color: white;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.start-btn {
+	background-color: hsla(97, 86%, 59%, 0.728);
+	padding: 10px;
+	border-style: none;
+	border-radius: 10px;
+	margin-right: 10px;
+	width: 120px;
+	font-size: 1.5rem;
+	font-weight: BOLD;
+	color: white;
+	cursor: pointer;
+}
+
+.stop-btn {
+	background-color: hsla(0, 86%, 59%, 0.728);
+	padding: 10px;
+	border-style: none;
+	border-radius: 10px;
+	margin-right: 10px;
+	width: 120px;
+	font-size: 1.5rem;
+	font-weight: BOLD;
+	color: white;
+	cursor: pointer;
+}
+
+.reset-btn {
+	background-color: hsla(176, 86%, 59%, 0.728);
+	padding: 10px;
+	border-style: none;
+	border-radius: 10px;
+	margin-right: 10px;
+	width: 120px;
+	font-size: 1.5rem;
+	font-weight: BOLD;
+	color: white;
+	cursor: pointer;
+}
+
+.start-btn:hover {
+	background-color: hsla(97, 86%, 59%, 0.521);
+}
+
+.stop-btn:hover {
+	background-color: hsla(0, 86%, 59%, 0.527);
+}
+
+.reset-btn:hover {
+	background-color: hsla(176, 86%, 59%, 0.532);
+}
+
+@media only screen and (max-width: 400px) {
+	.controls {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.stop-watch-container {
+		width: 100px;
+		border-style: none;
+	}
+	.display-time {
+		font-size: 2em;
+	}
+
+	.start-btn {
+		font-size: 1em;
+	}
+
+	.stop-btn {
+		font-size: 1em;
+	}
+
+	.reset-btn {
+		font-size: 1em;
+	}
+}
